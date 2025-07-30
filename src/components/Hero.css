@@ -1,0 +1,25 @@
+#hero{
+    /* position: relative; */
+    height: 570px;
+    background-color: #1ecae10f;
+    background-image: url("https://i.pinimg.com/736x/bd/46/a4/bd46a42f33f6c7cb09b0ee618aa770b8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero img{
+  width: 100%;
+  
+}
+.hero-h1, .hero-h2{
+    color: #ffffff;
+}
+.hero-content{
+  width: 50%;
+   position: absolute; 
+   top :35%; 
+   left: 40px
+}
+.searchBox{
+  border-radius: 20px;
+}

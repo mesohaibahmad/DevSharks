@@ -1,0 +1,12 @@
+.services{
+    padding: 15px;
+}
+.services-container{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.category-name{
+    margin-bottom: 20px;
+}

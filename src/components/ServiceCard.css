@@ -1,0 +1,24 @@
+.user-info{
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+.service-card{
+    height: 300px;
+}
+.profile-pic{
+    width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.serviceCard-username{
+    font-size: 14px;
+}
+.serviceCard-description{
+    font-size: 16px;
+}
+.serviceCard-price{
+    margin-top:8px;
+     margin-left:8px;
+}
