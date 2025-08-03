@@ -41,7 +41,7 @@ export default function AccountMenu({id, signIn}) {
   return (
     <React.Fragment>
       <Box id={id} sx={{ display: 'flex', alignItems: 'center', textAlign: 'center',  }}>
-        <Typography className='nav-menu-item' sx={{ minWidth: 100, cursor:"pointer", fontSize: '25px', fontWeight: '700', fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",  }} ><a href= "https://www.linkedin.com/in/muhammad-sufyan-734321247" style={activeNav?{color:"#1ECBE1", }:{color: 'white'}}>Contact</a></Typography>
+        <Typography className='nav-menu-item' sx={{ minWidth: 100, cursor:"pointer", fontSize: '25px', fontWeight: '700', fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",  }} ><a href= "https://www.linkedin.com/in/mesohaibahmad" style={activeNav?{color:"#1ECBE1", }:{color: 'white'}}>Contact</a></Typography>
         <Typography className='nav-menu-item' sx={{ minWidth: 100, cursor:"pointer", fontSize: '25px',fontWeight: '700', fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", }} onClick={signIn} >Sign In</Typography>
         <Typography className='nav-menu-item' sx={{ minWidth: 100, cursor:"pointer" , fontSize: '25px', fontWeight: '700', fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", }}><a href= "http://localhost:5173/userservice" style={activeNav?{color:"#1ECBE1", }:{color: 'white'}}> Profile</a></Typography>
         <Tooltip title="Account settings">
