@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-#LS-background{
+/* #LS-background{
     opacity: 0%;
     background-color:#DDDDDD;
     opacity: 50%;
@@ -8,7 +8,7 @@
     width: 100%;
     position: absolute;
     z-index: 20;
-}
+} */
 #LS-container {
 	background: #f6f5f7;
 	display: flex;

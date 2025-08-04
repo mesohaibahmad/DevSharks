@@ -11,10 +11,6 @@ header {
   text-align: center;
 }
 
-main {
-  margin-top: 20px;
-}
-
 .gig-details, .seller-info {
   background-color: #fff;
   border-radius: 8px;

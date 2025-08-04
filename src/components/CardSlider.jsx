@@ -37,7 +37,7 @@ updateSlideTrack()
     return(<div className='card-slider'>
         <button className='slide-left' onClick={slideLeftClicked}>{<ArrowBackIosIcon/>}</button>
         <div className='cards-container'>
-        <div className='cards' style={{height:"320px", width:`${cards.length*300+cards.length*8}px`,transform: move, transition:" transform 0.3s"}}>
+        <div className='cards' style={{ width:`${cards.length*300+cards.length*8}px`,transform: move, transition:" transform 0.3s"}}>
             {cards.map((card,index)=> card)}
         </div>
         </div>

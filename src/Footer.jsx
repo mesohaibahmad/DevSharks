@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        &copy; 2024 YourWebsite | Designed by You
+        &copy; 2024 dev-Sharks | Designed by Sohaib 
       </div>
     </footer>
   );

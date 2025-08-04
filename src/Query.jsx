@@ -1,5 +1,9 @@
 import './Query.css';
 import Services from './components/Services';
+import wordpressLogo from './assets/wordpress log.jpg';
+import shopifyLogo from './assets/shopify logo.png';    
+import customWebsitesLogo from './assets/custom-coding-icon.webp';
+import wooLogo from './assets/WooCommerce-Logo.jpg';
 export default function Query(){
     return(
         <>
@@ -19,28 +23,28 @@ export default function Query(){
         <div class="services">
             <div class="service-item">
                 <a href="#">
-                    <img src="shopify logo.png" alt="shopify"/>
+                    <img src={shopifyLogo} alt="shopify"/>
                     <span>Shopify</span>
                 </a>
             </div>
 
             <div class="service-item">
                 <a href="#">
-                    <img src="wordpress logo.png" alt="wordpress"/>
+                    <img src={wordpressLogo} alt="wordpress"/>
                     <span>Wordpress</span>
                 </a>
             </div>
 
             <div class="service-item">
                 <a href="#">
-                    <img src="custom websites logo.png" alt="custom websites"/>
+                    <img src={customWebsitesLogo} alt="custom websites"/>
                     <span>Custom Websites</span>
                 </a>
             </div>
 
             <div class="service-item">
                 <a href="#">
-                    <img src="woo.png" alt="woocommerce"/>
+                    <img src={wooLogo} alt="woocommerce"/>
                     <span>WooCommerce</span>
                 </a>
             </div>
@@ -96,8 +100,8 @@ export default function Query(){
             </div>
         </div>
         </div>
-      { <>  <Services category={"Web Development"} data={{img1: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/300747588/original/b57c5fe829645132052811afc2a6d90992527255/turn-figma-designs-into-custom-webflow-websites-expert-webflow-developer.png", nm1: "Sohaib Ahmad", img2: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/99168261/original/ccaf43ae6a4c6633d2ac21454d5e51e3b1ccf7c2.png", nm2: "Muhammad Sufyan", img3: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/363517211/original/c260743cdc70e9a43f97edc7869a0aed20fe623b/do-react-js-next-js-typescript-web-app-frontend-or-full-stack-development.png", nm3: "Aqib Ali", img4: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/148372632/original/bba33da7390943f3d97d5755bac2d9f0bdb31292.png", nm4: "Saim Razzaq"   ,desc: "I will create resposive wordpress website using Elementor Pro"}}/>
-   <Services category={"App Development"} data={{img4: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/300747588/original/b57c5fe829645132052811afc2a6d90992527255/turn-figma-designs-into-custom-webflow-websites-expert-webflow-developer.png", nm1: "Zeeshan", img3: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/99168261/original/ccaf43ae6a4c6633d2ac21454d5e51e3b1ccf7c2.png", nm2: "Muhammad Sufyan", img2: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/363517211/original/c260743cdc70e9a43f97edc7869a0aed20fe623b/do-react-js-next-js-typescript-web-app-frontend-or-full-stack-development.png", nm3: "Aqib Ali", img1: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/148372632/original/bba33da7390943f3d97d5755bac2d9f0bdb31292.png", nm4: "Saim Razzaq"   ,desc: "I will create resposive wordpress website using Elementor Pro"}}/>
+      { <>  <Services category={"Web Development"} data={{img1: "/images/custom-full-stack-web-developer.png", nm1: "Sohaib Ahmad", img2: "/images/wordpress.png", nm2: "Muhammad Sufyan", img3: "/images/frontend.jpg", nm3: "Aqib Ali", img4: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/148372632/original/bba33da7390943f3d97d5755bac2d9f0bdb31292.png", nm4: "Saim Razzaq"   ,desc: "I will create resposive wordpress website using Elementor Pro"}}/>
+   <Services category={"App Development"} data={{img4: "/images/custom-full-stack-web-developer.png", nm1: "Zeeshan", img3:  "/images/wordpress.png", nm2: "Muhammad Sufyan", img2:  "/images/frontend.jpg", nm3: "Aqib Ali", img1: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/148372632/original/bba33da7390943f3d97d5755bac2d9f0bdb31292.png", nm4: "Saim Razzaq"   ,desc: "I will create resposive wordpress website using Elementor Pro"}}/>
 </>}
 
       

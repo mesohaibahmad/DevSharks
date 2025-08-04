@@ -18,7 +18,7 @@ function App () {
   }
  function visibilityChng(){
   setsignInClicked(false);
-  document.body.style.overflow = "scroll";
+  document.body.style.overflow = "visible";
  }
 
   return (
@@ -27,7 +27,7 @@ function App () {
     <Router>
     <div>
       <Header signIn={signIn}/>
-      <main style={{marginTop:"80px"}}>
+      <main>
         
       <Routes>
             <Route path="/" element={<Home />} />
