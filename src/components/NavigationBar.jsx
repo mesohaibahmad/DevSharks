@@ -81,6 +81,9 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import logoIcon from '../assets/Icons/shark-dorsal-fin-svgrepo-com.svg';
+import { Link as MuiLink } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
+
 
 
 const drawerWidth = 240;
@@ -117,7 +120,7 @@ function NavigationBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Important Links
       </Typography>
       <Divider />
       <List>
@@ -135,41 +138,47 @@ function NavigationBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-     <Box sx={{ display: 'block' }}>
+     <Box sx={{ display: 'block', position: 'sticky', top: 0, zIndex: 1100 }}>
     <AppBar position="sticky" sx={{ top: 0 , zIndex: 1100}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <Box
-  component="img"
-  src={logoIcon}
-  alt="Shark Icon"
-  sx={{ display: { xs: 'none', md: 'flex' },
-        width: { xs: '100%', md: '32px' },
-        height: 'auto', mr: 1 }}
-/>
-          {/* <img
-  src={logoIcon}
-  alt="Shark Icon"
-  style={{ width: 32, height: 32, verticalAlign: 'middle'  }}
-/> */}
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-          
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-            onClick={()=>navigate("/")}
-          >
-            devSharks
-          </Typography>
+<MuiLink
+  component={RouterLink}
+  to="/"
+  sx={{
+    display: { xs: 'none', md: 'flex' },
+    alignItems: 'center',
+    color: 'inherit',
+    textDecoration: 'none', // Optional: removes underline
+  }}
+>  <Box
+    component="img"
+    src={logoIcon}
+    alt="Shark Icon"
+    sx={{
+      display: { xs: 'none', md: 'flex' },
+      width: { xs: '100%', md: '32px' },
+      height: 'auto',
+      mr: 1
+    }}
+  />
+  <Typography
+    variant="h6"
+    noWrap
+    component="div"
+    sx={{
+      display: { xs: 'none', md: 'flex' },
+      fontFamily: 'monospace',
+      fontWeight: 700,
+      letterSpacing: '.3rem',
+      color: 'inherit',
+        textDecoration: 'none',
+    }}
+  >
+    devSharks
+  </Typography>
+</MuiLink>
+
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -182,30 +191,18 @@ function NavigationBar(props) {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+      
           </Box>
-          <Box
+<MuiLink
+  component={RouterLink}
+  to="/"
+  sx={{flexGrow: 1,
+    display: { xs: 'flex', md: 'none' },
+    alignItems: 'center',
+    color: 'inherit',
+    textDecoration: 'none', // Optional: removes underline
+  }}
+>          <Box
   component="img"
   src={logoIcon}
   alt="Shark Icon"
@@ -217,7 +214,6 @@ function NavigationBar(props) {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -225,13 +221,13 @@ function NavigationBar(props) {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
+              color: 'inherit', 
             }}
-            onClick={()=>navigate("/")}
           >
             devS
           </Typography>
+          </MuiLink>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button

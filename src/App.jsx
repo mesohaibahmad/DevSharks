@@ -22,10 +22,9 @@ function App () {
  }
 
   return (
+     <Router>
     <div className='App'>
-    <LoginSignup clicked= {signInClicked} visibilityChng={visibilityChng}/>
-    <Router>
-    <div>
+       <LoginSignup clicked= {signInClicked} visibilityChng={visibilityChng}/>
       <Header signIn={signIn}/>
       <main>
         
@@ -36,9 +35,8 @@ function App () {
           </Routes>
       </main>
     <Footer/>
-    </div>
-  </Router>
   </div>
+   </Router>
   );
 }
 

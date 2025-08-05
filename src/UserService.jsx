@@ -3,7 +3,7 @@ export default function UserService(){
 return (
 <>
 
-<div class="container">
+<div class="service-container">
 <section class="gig-details">
     <div class="gig-image">
         <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/235994376/original/f595e8a93f1f50030f52117c1bc3150bef0cdb07/design-3-responsive-fiverr-gig-images-in-24-hours.png" alt="Gig Image"/>
