@@ -26,3 +26,14 @@
     cursor: pointer;
 
 }
+@media screen and (max-width: 720px) {
+ #search-input{
+    width: 80%;
+
+}
+#search-button{
+    width: 20%;
+  
+
+}
+}

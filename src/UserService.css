@@ -86,3 +86,10 @@ header {
   margin: 5px 0;
 }
 
+@media screen and (max-width: 720px) {
+ .container {
+ 
+width: 100%;
+
+}
+}

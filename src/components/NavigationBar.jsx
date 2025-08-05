@@ -156,7 +156,7 @@ function NavigationBar(props) {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+          
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -166,6 +166,7 @@ function NavigationBar(props) {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            onClick={()=>navigate("/")}
           >
             devSharks
           </Typography>
@@ -227,6 +228,7 @@ function NavigationBar(props) {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            onClick={()=>navigate("/")}
           >
             devS
           </Typography>

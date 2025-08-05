@@ -11,8 +11,8 @@ const Footer = () => {
             Your website description goes here. It can include a brief introduction to your site and what you offer.
           </p>
           <div className="contact">
-            <span><i className="fas fa-phone"></i> &nbsp; +123-456-7890</span>
-            <span><i className="fas fa-envelope"></i> &nbsp; info@yourwebsite.com</span>
+            <span><i className="fas fa-phone"></i> &nbsp; +92-305-2558808</span>
+            <span><i className="fas fa-envelope"></i> &nbsp; sohaib.pak2017@gmail.com</span>
           </div>
           <div className="socials">
             <a href="#"><i className="fab fa-facebook"></i></a>
@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="#"><li>Home</li></a>
             <a href="#"><li>About</li></a>
             <a href="#"><li>Services</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="https://www.linkedin.com/in/mesohaibahmad"><li>Contact</li></a>
           </ul>
         </div>
 
