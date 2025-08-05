@@ -167,7 +167,7 @@ function NavigationBar(props) {
               textDecoration: 'none',
             }}
           >
-            dev-Sharks
+            devSharks
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -228,7 +228,7 @@ function NavigationBar(props) {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            devSharks
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
